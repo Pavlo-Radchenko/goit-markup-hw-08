@@ -5,6 +5,10 @@
   margin-bottom: 50px;
   justify-content: center;
   list-style: none;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+  }
 }
 
 .button {

@@ -22,9 +22,10 @@
   @media screen and (max-width: 767px) {
     padding-top: 16px;
     padding-bottom: 16px;
+    margin-right: 0;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 88px;
   }
 }

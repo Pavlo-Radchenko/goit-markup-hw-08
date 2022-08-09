@@ -5,23 +5,19 @@
   list-style: none;
 
   @media screen and (max-width: 767px) {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .futures__item {

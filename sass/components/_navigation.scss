@@ -1,6 +1,8 @@
 .nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__list {
@@ -20,7 +22,7 @@
 .nav__list.contacts {
   gap: 30px;
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin-top: 21px;
