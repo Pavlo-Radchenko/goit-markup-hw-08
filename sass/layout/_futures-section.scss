@@ -1,11 +1,13 @@
 .futures__list {
   display: flex;
   gap: 30px;
-
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  list-style: none;
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
 }
 
 .futures__item {
