@@ -300,13 +300,19 @@ img {
 .hero__title {
   color: var(--primary-white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -357,7 +363,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
+  max-width: 450px;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
@@ -388,7 +394,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
+  width: 100%;
   height: 120px;
   padding: 25 100;
   background-color: #f5f4fa;
@@ -435,7 +441,7 @@ img {
 .wwd__section {
   padding-top: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .wwd__section {
     display: none;
   }
@@ -525,11 +531,11 @@ img {
 }
 @media screen and (max-width: 767px) {
   .teem__item {
-    width: 450px;
+    max-width: 450px;
     height: 622px;
   }
   .teem__item img {
-    width: 450px;
+    max-width: 450px;
     height: 460px;
   }
 }
@@ -641,6 +647,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -650,21 +658,9 @@ img {
           justify-content: center;
   gap: 30px;
 }
-@media screen and (max-width: 767px) {
-  .clients__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 
 .clients__item {
-  width: 170px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -676,11 +672,6 @@ img {
   border-radius: 4px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-}
-@media screen and (max-width: 767px) {
-  .clients__item {
-    width: 210px;
-  }
 }
 @media screen and (min-width: 768px) {
   .clients__item {
@@ -697,6 +688,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1328,7 +1321,7 @@ img {
 
 .modal__window {
   position: absolute;
-  width: 450px;
+  max-width: 450px;
   height: auto;
   top: 50%;
   left: 50%;

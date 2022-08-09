@@ -34,10 +34,10 @@
   }
 
   @media screen and (max-width: 767px) {
-    width: 450px;
+    max-width: 450px;
     height: 622px;
     img {
-      width: 450px;
+      max-width: 450px;
       height: 460px;
     }
   }

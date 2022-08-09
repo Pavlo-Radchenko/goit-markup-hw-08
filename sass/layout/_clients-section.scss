@@ -10,27 +10,17 @@
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 
   align-items: center;
   justify-content: center;
 
   gap: 30px;
-
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-
-    // flex-basis: calc(100% / 2);
-  }
-
-  @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
-    // width: calc((100% - 4 * 15px) / 3);
-  }
 }
 
 .clients__item {
-  width: 170px;
+  max-width: 210px;
   height: 92px;
 
   border: 1px solid #afb1b8;
@@ -45,9 +35,6 @@
 
     transition: var(--transition);
   }
-  @media screen and (max-width: 767px) {
-    width: 210px;
-  }
 
   @media screen and (min-width: 768px) {
     width: 226px;
@@ -60,6 +47,7 @@
 
 .clients__link {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
