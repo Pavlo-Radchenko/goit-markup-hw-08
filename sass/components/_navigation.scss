@@ -11,10 +11,23 @@
   letter-spacing: 0.02em;
   display: flex;
   gap: 50px;
-  margin-left: auto;
+  margin-left: 0;
 
   align-items: center;
   justify-content: center;
+}
+
+.nav__list.contacts {
+  gap: 30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    gap: 10px;
+    justify-content: flex-start;
+  }
 }
 
 .nav__item {

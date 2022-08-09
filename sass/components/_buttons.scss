@@ -4,3 +4,27 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
+
+.menu__button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.menu__button .menu_close {
+  display: none;
+}
+
+.menu__button.is-open .menu_close {
+  display: block;
+}
+
+.menu__button.is-open .menu_open {
+  display: none;
+}

@@ -131,17 +131,10 @@
     margin-top: 60px;
   }
 
-  // @media screen and (min-width: 768px) {
-  //   text-align: center;
-  // }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-top: 0;
+  }
 }
-// .footer-socials {
-//   @media screen and (min-width: 767px) {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-// }
 
 .footer-social__list {
   display: flex;
@@ -207,7 +200,7 @@
   outline: none;
 
   @media screen and (max-width: 1200px) {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
