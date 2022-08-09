@@ -1208,7 +1208,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .benefits__link {
   padding: 20px 24px;
 }
@@ -1236,7 +1235,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 370px;
+  width: 450px;
   height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -1258,12 +1257,24 @@ img {
 .benefits__item:nth-child(3n) {
   margin-right: 0;
 }
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: 354px;
+    height: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 370px;
+    height: 404px;
+  }
+}
 
 .overlay {
   position: relative;
   top: 0;
   left: 0;
-  width: 370px;
+  width: 100%;
   height: 294px;
   overflow: hidden;
 }
