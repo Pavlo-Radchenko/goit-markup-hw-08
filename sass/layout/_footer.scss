@@ -5,7 +5,6 @@
 }
 
 .footer__container {
-  display: flex;
   /* щоб вирівняти весь контент за однією лінією */
   align-items: baseline;
   justify-content: center;
@@ -15,26 +14,8 @@
 
   gap: 70px;
 
-  @media screen and (max-width: 767px) {
-    display: block;
-    text-align: center;
-  }
-
-  @media screen and (min-width: 768px) {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 165px;
-  }
-
-  @media screen and (max-width: 1200px) {
-    flex-wrap: wrap;
-    align-items: baseline;
-  }
-
   @media screen and (min-width: 1200px) {
-    gap: 70px;
-    align-items: baseline;
+    display: flex;
   }
 }
 
@@ -115,6 +96,12 @@
   letter-spacing: 0.02em;
 }
 
+.footer-socials {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
+
 .footer__title {
   font-size: 14px;
   line-height: 1.14;
@@ -128,7 +115,7 @@
 
   @media screen and (max-width: 1200px) {
     text-align: center;
-    margin-top: 60px;
+    // margin-top: 60px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -175,6 +162,16 @@
     fill: var(--primary-white-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer-form {
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 60px;
   }
 }
 
@@ -232,5 +229,32 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.footer-contacts {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 165px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 70px;
+    align-items: baseline;
   }
 }

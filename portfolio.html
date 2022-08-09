@@ -29,6 +29,8 @@
           <a class="page__logo" href="index.html">
             <span class="page__logo--accent">Web</span>Studio
           </a>
+        </nav>
+        <div class="menu__container">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="./index.html">Студія</a>
@@ -38,23 +40,36 @@
             </li>
             <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
           </ul>
-        </nav>
-        <ul class="nav__list">
-          <li>
-            <a class="header__auth" href="mailto:info@devstudio.com">
-              <svg class="header__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use></svg
-              >info@devstudio.com</a
+
+          <ul class="nav__list contacts">
+            <li>
+              <a class="header__auth" href="mailto:info@devstudio.com">
+                <svg class="header__icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="header__auth" href="tel:+380961111111">
+                <svg class="header__icon" width="10" height="16">
+                  <use href="./images/icons.svg#vector"></use></svg
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+          <button class="menu__button is-open" data-menu-button type="button">
+            <svg
+              class="menu__icons"
+              width="40px"
+              height="40px"
+              aria-label="перемикач мобільного меню"
+              aria-expanded="false"
             >
-          </li>
-          <li>
-            <a class="header__auth" href="tel:+380961111111">
-              <svg class="header__icon" width="10" height="16">
-                <use href="./images/icons.svg#vector"></use></svg
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
+              <use class="menu_open" href="./images/icons.svg#menu_open"></use>
+              <use class="menu_close" href="./images/icons.svg#menu_close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
