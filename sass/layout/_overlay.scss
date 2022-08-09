@@ -1,0 +1,41 @@
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+
+  overflow: hidden;
+}
+
+.overlay__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(101%);
+  /* додаємо для млавної анімації */
+  transition: transform 250ms ease-in-out;
+
+  .benefits__item:hover &,
+  .benefits__item:focus & {
+    transform: translateY(0);
+
+    transition: transform 250ms ease-in-out;
+  }
+}
+
+.overlay__about {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  padding: 63px 24px;
+  text-align: left;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}

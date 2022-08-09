@@ -1,0 +1,25 @@
+.page__logo {
+  display: inline-block;
+
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  padding: 0;
+  margin-right: 93px;
+
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: var(--transition);
+  }
+}
+
+.page__logo--accent {
+  color: var(--accent-color);
+}

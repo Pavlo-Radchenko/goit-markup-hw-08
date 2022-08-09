@@ -1,0 +1,47 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__auth {
+  display: flex;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
+
+  margin-left: auto;
+
+  margin-left: auto;
+  gap: 10px;
+
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+
+    transition: var(--transition);
+  }
+}
+
+.header__icon {
+  top: 3px;
+  fill: currentColor;
+  justify-content: center;
+  align-items: center;
+
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.portfolio__header {
+  border: 1px solid #ececec;
+}
