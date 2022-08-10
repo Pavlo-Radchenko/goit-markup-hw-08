@@ -32,6 +32,7 @@ p {
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .list {
@@ -285,9 +286,11 @@ img {
 
 .menu__mobile {
   display: none;
+  -webkit-transition: height 0.4s, opacity 0.5s;
+  transition: height 0.4s, opacity 0.5s;
 }
 .menu__mobile.is-open {
-  position: fixed;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,10 +308,8 @@ img {
   padding-left: 40px;
   background-color: white;
   overflow-y: hidden;
-  -webkit-transition: opacity 200ms, visibility 200ms, -webkit-transform 200ms;
-  transition: opacity 200ms, visibility 200ms, -webkit-transform 200ms;
-  transition: opacity 200ms, visibility 200ms, transform 200ms;
-  transition: opacity 200ms, visibility 200ms, transform 200ms, -webkit-transform 200ms;
+  -webkit-transition: height 0.9s, opacity 0.5s;
+  transition: height 0.9s, opacity 0.5s;
 }
 @media screen and (min-width: 767px) {
   .menu__mobile.is-open {
@@ -1554,8 +1555,8 @@ img {
 .form {
   display: block;
   width: 100%;
-  padding: 40px;
   height: 100%;
+  padding: 40px;
 }
 
 .form__title {

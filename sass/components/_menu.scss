@@ -1,24 +1,21 @@
 // .menu__overlay {
-//   display: none;
-//   &.is-open {
-//     display: flex;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
+//   position: relative;
+//   top: 0;
+//   left: 0;
 
+//   overflow: hidden;
+//   &.is-open {
 //     width: 100%;
 //     height: 100%;
-
-//     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-//       0px 1px 3px rgba(0, 0, 0, 0.16);
 //   }
 // }
 
 .menu__mobile {
   display: none;
+  transition: height 0.4s, opacity 0.5s;
 
   &.is-open {
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
 
@@ -35,7 +32,7 @@
     background-color: white;
     overflow-y: hidden;
 
-    transition: opacity 200ms, visibility 200ms, transform 200ms;
+    transition: height 0.9s, opacity 0.5s;
 
     @media screen and (min-width: 767px) {
       display: none;
