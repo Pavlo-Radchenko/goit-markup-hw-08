@@ -224,18 +224,22 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 8px;
   margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   list-style: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .button__list {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -742,9 +746,11 @@ img {
 
 .header__container {
   display: block;
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .header__container {
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1208,6 +1214,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .benefits__link {
   padding: 20px 24px;
 }
@@ -1351,7 +1358,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal__window {
-    width: 528px;
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -1386,6 +1394,7 @@ img {
 
 .form {
   display: block;
+  width: 100%;
   padding: 40px;
   height: 100%;
 }
@@ -1404,6 +1413,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .form__title {
+    font-size: 20px;
     line-height: 23px;
   }
 }
@@ -1428,7 +1438,7 @@ img {
 .form__input {
   display: block;
   position: relative;
-  width: 100%;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
   margin-top: 4px;
@@ -1444,6 +1454,11 @@ img {
   border-radius: 4px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .form__input {
+    width: 448px;
+  }
 }
 
 .form__icon {
@@ -1470,6 +1485,12 @@ img {
   margin-bottom: 20px;
   padding: 12px 16px;
   resize: none;
+}
+@media screen and (min-width: 1200px) {
+  .form__text {
+    width: 448px;
+    height: 120px;
+  }
 }
 .form__text::-webkit-input-placeholder {
   font-weight: 400;
@@ -1590,6 +1611,7 @@ img {
   border-radius: 4px;
   border: none;
   color: var(--primary-white-color);
+  padding: 0;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
