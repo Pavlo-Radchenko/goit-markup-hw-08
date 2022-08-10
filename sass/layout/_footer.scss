@@ -175,16 +175,17 @@
 }
 
 .footer-form__group {
-  display: flex;
-  gap: 12px;
+  display: block;
+  width: 100%;
 
-  @media screen and (max-width: 1199px) {
-    display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 12px;
   }
 }
 
 .footer-form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -194,9 +195,13 @@
   color: var(--primary-white-color);
 
   outline: none;
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     max-width: 450px;
+    width: 358px;
   }
 }
 

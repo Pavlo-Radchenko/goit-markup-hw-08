@@ -34,6 +34,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
   @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;
