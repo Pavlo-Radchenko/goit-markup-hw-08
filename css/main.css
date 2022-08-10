@@ -305,6 +305,10 @@ img {
   padding-left: 40px;
   background-color: white;
   overflow-y: hidden;
+  -webkit-transition: opacity 200ms, visibility 200ms, -webkit-transform 200ms;
+  transition: opacity 200ms, visibility 200ms, -webkit-transform 200ms;
+  transition: opacity 200ms, visibility 200ms, transform 200ms;
+  transition: opacity 200ms, visibility 200ms, transform 200ms, -webkit-transform 200ms;
 }
 @media screen and (min-width: 767px) {
   .menu__mobile.is-open {
@@ -318,15 +322,22 @@ img {
   line-height: 47px;
   letter-spacing: 0.02em;
   color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile__link:hover,
 .mobile__link :focus {
-  padding-bottom: 36px;
   color: rgb(33, 150, 243);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile__item:not(:last-child) {
   padding-bottom: 32px;
+}
+.mobile__item:hover,
+.mobile__item :focus {
+  padding-bottom: 36px;
 }
 
 .mobile__nav-phone {
@@ -344,10 +355,14 @@ img {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile__nav-mail:hover,
 .mobile__nav-mail :focus {
   color: #2196f3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile__social {
@@ -399,10 +414,14 @@ img {
   margin: 10px 15px 10px;
   border: 0;
   background-color: transparent;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__button:hover,
 .menu__button :focus {
   fill: #2196f3;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu__button {
@@ -1004,18 +1023,6 @@ img {
   .menu__button {
     display: none;
   }
-}
-
-.menu__button .menu_close {
-  display: none;
-}
-
-.menu__button.is-open .menu_close {
-  display: block;
-}
-
-.menu__button.is-open .menu_open {
-  display: none;
 }
 
 .footer {

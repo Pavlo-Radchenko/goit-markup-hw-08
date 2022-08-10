@@ -108,15 +108,3 @@
     display: none;
   }
 }
-
-.menu__button .menu_close {
-  display: none;
-}
-
-.menu__button.is-open .menu_close {
-  display: block;
-}
-
-.menu__button.is-open .menu_open {
-  display: none;
-}
