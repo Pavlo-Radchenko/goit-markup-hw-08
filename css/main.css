@@ -354,6 +354,10 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
+.mobile__nav-mail:hover,
+.mobile__nav-mail :focus {
+  color: #2196f3;
+}
 
 .mobile__social {
   display: -webkit-box;
@@ -404,6 +408,10 @@ img {
   margin: 10px 15px 10px;
   border: 0;
   background-color: transparent;
+}
+.menu__button:hover,
+.menu__button :focus {
+  fill: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .menu__button {
