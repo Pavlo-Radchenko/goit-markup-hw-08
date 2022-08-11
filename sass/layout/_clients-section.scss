@@ -22,6 +22,7 @@
 .clients__item {
   max-width: 210px;
   height: 92px;
+  width: calc((100% - 30px) / 2);
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -47,11 +48,10 @@
 
 .clients__link {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
-  width: 210px;
+  max-width: 210px;
   height: 92px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,6 +64,8 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     width: 226px;
   }
 

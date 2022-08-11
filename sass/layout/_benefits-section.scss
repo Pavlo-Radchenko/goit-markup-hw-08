@@ -70,6 +70,10 @@
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 440px;
+
+    &:last-child {
+      margin-right: auto;
+    }
   }
 
   @media screen and (min-width: 1200px) {
