@@ -17,11 +17,11 @@
   background-size: cover;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-bg/hero-mobile-480.jpeg);
+    url(../images/hero-bg/hero-mobile.jpeg);
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero-bg/hero-mobile-960@2x.jpeg);
+      url(../images/hero-bg/hero-mobile@2x.jpeg);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
