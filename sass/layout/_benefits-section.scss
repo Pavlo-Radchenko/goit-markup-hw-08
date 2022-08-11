@@ -47,7 +47,7 @@
   justify-content: space-between;
 
   width: 450px;
-  height: 404px;
+  height: auto;
 
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -67,9 +67,13 @@
     margin-right: 0;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
-    height: 440px;
+
+    &:first-child,
+    &:nth-child(2) {
+      height: 440px;
+    }
 
     &:last-child {
       margin-right: auto;
@@ -78,6 +82,5 @@
 
   @media screen and (min-width: 1200px) {
     width: 370px;
-    height: 404px;
   }
 }
