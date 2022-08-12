@@ -731,6 +731,12 @@ img {
     margin: 0;
   }
 }
+@media screen and (min-width: 480px) {
+  .teem__item {
+    width: 450px;
+    height: 622px;
+  }
+}
 @media screen and (min-width: 768px) {
   .teem__item {
     width: 354px;

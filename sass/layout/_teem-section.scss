@@ -32,6 +32,11 @@
     }
   }
 
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 622px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 536px;
