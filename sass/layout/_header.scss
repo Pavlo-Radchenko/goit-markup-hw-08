@@ -9,14 +9,10 @@
 }
 
 .header__container {
-  display: block;
-  margin: 0;
-  @media screen and (min-width: 768px) {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .header__auth {
@@ -92,19 +88,19 @@
   }
 }
 
-.menu__button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  margin: 10px 15px 10px;
+// .menu__button {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   padding: 0;
+//   width: 40px;
+//   height: 40px;
+//   margin: 10px 15px 10px;
 
-  border: 0;
-  background-color: transparent;
+//   border: 0;
+//   background-color: transparent;
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
+// }
