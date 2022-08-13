@@ -173,6 +173,10 @@
     align-items: center;
     justify-content: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .footer-form__group {
@@ -244,16 +248,13 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 165px;
-  }
 
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
     align-items: baseline;
   }
 

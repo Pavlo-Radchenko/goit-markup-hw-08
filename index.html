@@ -25,11 +25,22 @@
     <!-- header -->
     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a class="page__logo" href="index.html">
-            <span class="page__logo--accent">Web</span>Studio
-          </a>
-        </nav>
+        <a class="page__logo" href="index.html">
+          <span class="page__logo--accent">Web</span>Studio
+        </a>
+        <button class="menu__button" data-menu-button type="button">
+          <svg
+            class="menu__icons"
+            width="40px"
+            height="40px"
+            aria-label="перемикач мобільного меню"
+            aria-expanded="false"
+          >
+            <use class="menu_open" href="./images/icons.svg#menu_open"></use>
+            <use class="menu_close" href="./images/icons.svg#menu_close"></use>
+          </svg>
+        </button>
+
         <div class="menu__container">
           <ul class="nav__list">
             <li class="nav__item">
@@ -58,18 +69,6 @@
             </li>
           </ul>
         </div>
-        <button class="menu__button" data-menu-button type="button">
-          <svg
-            class="menu__icons"
-            width="40px"
-            height="40px"
-            aria-label="перемикач мобільного меню"
-            aria-expanded="false"
-          >
-            <use class="menu_open" href="./images/icons.svg#menu_open"></use>
-            <use class="menu_close" href="./images/icons.svg#menu_close"></use>
-          </svg>
-        </button>
       </div>
     </header>
     <main>
@@ -186,12 +185,12 @@
             <li class="teem__item">
               <img
                 srcset="
-                  ./images/teem/img-mobile-1.jpg    450w,
-                  ./images/teem/img-mobile-1@2x.jpg 900w,
-                  ./images/teem/img-tab-1.jpg       354w,
-                  ./images/teem/img-tab-1@2x.jpg    708w,
-                  ./images/teem/img-des-1.jpg       270w,
-                  ./images/teem/img-des-1@2x.jpg    540w
+                ./images/teem/img-des-1.jpg       270w,
+                ./images/teem/img-tab-1.jpg       354w,
+                ./images/teem/img-tab-1@2x.jpg    708w,
+                ./images/teem/img-mobile-1.jpg    450w,
+                ./images/teem/img-des-1@2x.jpg    540w
+                ./images/teem/img-mobile-1@2x.jpg 900w,
                 "
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 src="./images/teem/img-mobile-1.jpg"
@@ -260,12 +259,12 @@
             <li class="teem__item">
               <img
                 srcset="
-                  ./images/teem/img-mobile-2.jpg    450w,
-                  ./images/teem/img-mobile-2@2x.jpg 900w,
-                  ./images/teem/img-tab-2.jpg       354w,
-                  ./images/teem/img-tab-2@2x.jpg    708w,
                   ./images/teem/img-des-2.jpg       270w,
-                  ./images/teem/img-des-2@2x.jpg    540w
+                ./images/teem/img-tab-2.jpg       354w,
+                ./images/teem/img-tab-2@2x.jpg    708w,
+                ./images/teem/img-mobile-2.jpg    450w,
+                ./images/teem/img-des-2@2x.jpg    540w
+                ./images/teem/img-mobile-2@2x.jpg 900w,
                 "
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 src="./images/teem/img-mobile-2.jpg"
@@ -334,12 +333,12 @@
             <li class="teem__item">
               <img
                 srcset="
-                  ./images/teem/img-mobile-3.jpg    450w,
-                  ./images/teem/img-mobile-3@2x.jpg 900w,
-                  ./images/teem/img-tab-3.jpg       354w,
-                  ./images/teem/img-tab-3@2x.jpg    708w,
                   ./images/teem/img-des-3.jpg       270w,
-                  ./images/teem/img-des-3@2x.jpg    540w
+                ./images/teem/img-tab-3.jpg       354w,
+                ./images/teem/img-tab-3@2x.jpg    708w,
+                ./images/teem/img-mobile-3.jpg    450w,
+                ./images/teem/img-des-3@2x.jpg    540w
+                ./images/teem/img-mobile-3@2x.jpg 900w,
                 "
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 src="./images/teem/img-mobile-3.jpg"
@@ -408,12 +407,12 @@
             <li class="teem__item">
               <img
                 srcset="
-                  ./images/teem/img-mobile-4.jpg    450w,
-                  ./images/teem/img-mobile-4@2x.jpg 900w,
-                  ./images/teem/img-tab-4.jpg       354w,
-                  ./images/teem/img-tab-4@2x.jpg    708w,
                   ./images/teem/img-des-4.jpg       270w,
-                  ./images/teem/img-des-4@2x.jpg    540w
+                ./images/teem/img-tab-4.jpg       354w,
+                ./images/teem/img-tab-4@2x.jpg    708w,
+                ./images/teem/img-mobile-4.jpg    450w,
+                ./images/teem/img-des-4@2x.jpg    540w
+                ./images/teem/img-mobile-4@2x.jpg 900w,
                 "
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 src="./images/teem/img-mobile-4.jpg"
