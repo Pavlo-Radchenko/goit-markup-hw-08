@@ -116,7 +116,6 @@
 }
 
 .menu__button {
-  z-index: 4;
   top: 0;
   right: 0;
   padding: 0;
@@ -138,6 +137,7 @@
     position: absolute;
     margin-top: 10px;
     margin-right: 15px;
+    z-index: 1;
   }
 
   @media screen and (min-width: 768px) {
